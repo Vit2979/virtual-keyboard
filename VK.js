@@ -24,10 +24,7 @@ const Keyboard = {
  
         this.elements.main = document.createElement("div");
         this.elements.keysContainer = document.createElement("div");
-       
-        
-
-     
+                
     
         this.elements.main.classList.add("keyboard", "keyboard--hidden");
         this.elements.keysContainer.classList.add("keyboard__keys");
