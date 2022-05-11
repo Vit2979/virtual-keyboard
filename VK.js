@@ -17,14 +17,15 @@ const Keyboard = {
         capsLock: false
     },
 
-
-
     init() {
       
  
         this.elements.main = document.createElement("div");
         this.elements.keysContainer = document.createElement("div");
-                
+       
+        
+
+     
     
         this.elements.main.classList.add("keyboard", "keyboard--hidden");
         this.elements.keysContainer.classList.add("keyboard__keys");
@@ -143,7 +144,6 @@ const Keyboard = {
             }
         });
 
-
         return fragment;
     },
 
@@ -163,16 +163,12 @@ const Keyboard = {
         }
     },
 
-
-
-    open(initialValue, oninput, onclose) {
+    open(initialValue, oninput) {
         this.properties.value = initialValue || "";
         this.eventHandlers.oninput = oninput;
 
     },
-
 };
-
 
 window.addEventListener("DOMContentLoaded", function () {
     Keyboard.init();
